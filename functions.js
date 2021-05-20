@@ -1,9 +1,15 @@
 // select the element - querySelector
+let clickCounterElement = document.querySelector('#clickCounter')
 
-let replaceInnerTEXT = function( string ) {
+let replaceInnerTEXT = function( number ) {
 // replace element's inner text
 
+    clickCounterElement.innerText = `Clicked ${number} times`
+    console.dir(clickCounterElement)
+    return // something
 }
+
+//from main.js => line 6.
 
 
 replaceInnerTEXT("hello")
@@ -16,12 +22,21 @@ replaceInnerTEXT("hello")
 // 5. from line 9 variable string = "hello"
 
 // select element2 = <UL> - queryselector
+let keyLogger = document.querySelector('ul')
+console.log(keyLogger)
 
-let appendListItem = function( string ) {
+//callbacks use the event Object as the argument
+// could also be called keyDownHandler
+let appendListItem = function( eventObject ) {
+    console.log(eventObject)
+    let keyCode = eventObject.code
+    let listItem = document.createElement('li')
+    listItem.innerText = keyCode
+    keyLogger.append(listItem)
 // create <li>
 // add string to the li
 // append li to ul
 
 }
 
-appendListItem("hello") // all functions have implied return undefined
+// appendListItem("hello") // all functions have implied return undefined
