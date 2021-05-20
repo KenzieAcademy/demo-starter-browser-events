@@ -11,15 +11,14 @@ let replaceInnerTEXT = function( number ) {
 
 //from main.js => line 6.
 
-
 replaceInnerTEXT("hello")
 
 // order of code
-// 1. select element - line 1
-// 2. assign variable - live 3
-// 3. call the function - line 9
-// 4. a lot more code - line 4
-// 5. from line 9 variable string = "hello"
+// 1. select element - line 2
+// 2. assign variable - live 4
+// 3. call the function - line 14
+// 4. code inside function - line 5
+// 5. from line 14 variable string = "hello" when called with "hello"
 
 // select element2 = <UL> - queryselector
 let keyLogger = document.querySelector('ul')
