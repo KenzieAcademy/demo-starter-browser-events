@@ -1,6 +1,9 @@
 main {
     max-width: 800px;
     margin: 0 auto;
+    background-color: papayawhip;
+    height: 100vh;
+    padding: 2rem 4rem;
 }
 
 h1 {
